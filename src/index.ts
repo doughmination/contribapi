@@ -1,4 +1,4 @@
-import { queryCodeberg } from "./codeberg";
+import { queryGitdotGay } from "./gitdotgay";
 import { queryGithub } from "./github";
 
 const corsHeaders = {
@@ -8,10 +8,9 @@ const corsHeaders = {
 };
 
 function queryForges(env: Env) {
-	// CHANGE add/remove forges here
 	return [
 		queryGithub(env),
-		queryCodeberg(env),
+		queryGitdotGay(env)
 	];
 }
 
