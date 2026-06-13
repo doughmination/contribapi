@@ -7,6 +7,14 @@ const corsHeaders = {
 	"Access-Control-Allow-Headers": "Content-Type",
 };
 
+function queryForges(env: Env) {
+	// CHANGE add/remove forges here
+	return [
+		queryGithub(env),
+		queryCodeberg(env),
+	];
+}
+
 export default {
 	async fetch(request, env): Promise<Response> {
 		if (request.method === "OPTIONS") {
@@ -17,7 +25,7 @@ export default {
 			return new Response("OwO wutz that");
 		}
 
-		const responses = await Promise.all([queryGithub(env), queryCodeberg(env)]);
+		const responses = await Promise.all(queryForges(env));
 		const merged = Object.assign({}, ...responses);
 
 		return Response.json(merged, {

@@ -5,7 +5,7 @@ export const codebergResponse = z.array(daySchema);
 
 export async function queryCodeberg(env: Env): Promise<{ codeberg: Day[] }> {
 	const response = await fetch(
-		`https://soxy.dragsbruh.workers.dev/?u=https://codeberg.org/api/v1/users/${env.CODEBERG_USERNAME}/heatmap`,
+		`https://codeberg.org/api/v1/users/${env.CODEBERG_USERNAME}/heatmap`,
 		{
 			headers: {
 				"User-Agent": USER_AGENT,
