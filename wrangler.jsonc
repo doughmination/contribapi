@@ -1,8 +1,9 @@
 {
-	"name": "contrib",
-	"main": "src/index.ts",
-	"compatibility_date": "2026-05-31",
-	"observability": {
-		"enabled": true
-	}
+  "name": "contrib",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-31",
+  "account_id": "f87ee4b9600f437b8da1104d077418c3",
+  "observability": {
+    "enabled": true
+  }
 }
