@@ -22,7 +22,7 @@ pnpx wrangler secret put <name>
 codeberg (or forgejo in general) do not need api keys to get user heatmap.
 
 ```env
-CODEBERG_USERNAME=dragsbruh
+CODEBERG_USERNAME=doughmination
 ```
 
 **2. github**
@@ -33,7 +33,7 @@ with access to commit statuses of all repos.
 https://github.com/settings/personal-access-tokens
 
 ```env
-GITHUB_USERNAME=dragsbruh
+GITHUB_USERNAME=doughmination
 GITHUB_TOKEN=github_pat_xxxxxxxxxx
 ```
 
