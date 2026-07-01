@@ -4,7 +4,7 @@ tiny extensible api to merge contribution heatmap from forgejo (git.gay, codeber
 and github.
 
 > [!IMPORTANT]
-> This repo is NOT by me, this is works by [dragsbruh](https://github.com/dragsbruh), and you can find the original repo on [Codeberg](https://codeberg.org/dragsbruh/contribapi).
+> This repo is NOT by me, this is works by [dragsbruh](https://codeberg.org/dragsbruh), and you can find the original repo on [Codeberg](https://codeberg.org/dragsbruh/contribapi).
 > I originally made edits so I could keep up with it, but I still want the original owner attributed
 
 > [!NOTE]
